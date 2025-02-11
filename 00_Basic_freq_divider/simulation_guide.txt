@@ -1,0 +1,32 @@
+1. Main Files
+- RTL File: freq_divider.vhd
+- Testbench File: freq_divider_tb.vhd
+- Script Files:
+  - run.do - Runs the simulation
+  - compile.do - Compiles the design
+  - simulate.do - Runs the simulation after compilation
+  
+2. Running the Simulation in QuestaSim
+Using QuestaSim GUI
+1. Open QuestaSim.
+2. Navigate to the project directory:
+   cd {path}
+3. Run the run.do script:
+   do run.do
+
+Using Cygwin (Command Line Mode)
+1. Set the QuestaSim environment in Cygwin:
+   export PATH=$PATH:/cygdrive/d/lssc/questasim/win64
+2. Verify the setup:
+   which vsim
+3. Run the simulation:
+   - Command-line mode:
+     vsim -c -do run.do
+   - GUI mode:
+     vsim -do run.do
+3. Handling Errors
+If errors occur during simulation, first compile the design and then run the simulation:
+1. Compile:
+   vsim -c -do compile.do
+2. Run simulation:
+   vsim -do simulate.do
