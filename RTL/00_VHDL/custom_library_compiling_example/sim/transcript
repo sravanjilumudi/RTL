@@ -1,0 +1,61 @@
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do bin/combo_logic_example.do
+# ** Warning: (vlib-34) Library already exists at "custom_library".
+# Errors: 0, Warnings: 1
+# Questa Lattice OEM Edition-64 vmap 2024.2 Lib Mapping Utility 2024.05 May 20 2024
+# vmap work work 
+# Modifying D:/lssc/questasim/win64/../modelsim.ini
+# Questa Lattice OEM Edition-64 vmap 2024.2 Lib Mapping Utility 2024.05 May 20 2024
+# vmap custom_library custom_library 
+# Modifying D:/lssc/questasim/win64/../modelsim.ini
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 10:03:25 on Feb 19,2025
+# vcom -reportprogress 300 -work custom_library ../src/rtl/combo_logic_example.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity combo_logic_example
+# -- Compiling architecture rtl of combo_logic_example
+# End time: 10:03:25 on Feb 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 10:03:25 on Feb 19,2025
+# vcom -reportprogress 300 -work work ./rtl/combo_logic_example_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity combo_logic_example_tb
+# -- Compiling architecture tb of combo_logic_example_tb
+# -- Loading entity combo_logic_example
+# End time: 10:03:25 on Feb 19,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.combo_logic_example_tb 
+# Start time: 10:03:25 on Feb 19,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.combo_logic_example_tb(tb)#1
+# Loading custom_library.combo_logic_example(rtl)#1
+# ** Note: Starting Simulation...
+#    Time: 0 ns  Iteration: 0  Instance: /combo_logic_example_tb
+# ** Note: Simulation Completed!
+#    Time: 50 ns  Iteration: 0  Instance: /combo_logic_example_tb
+quit
+# End time: 10:03:34 on Feb 19,2025, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 1

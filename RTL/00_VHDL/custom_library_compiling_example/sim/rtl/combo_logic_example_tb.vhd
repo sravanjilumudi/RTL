@@ -10,11 +10,14 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
+library custom_library;   -- Added the custom library where the combo_logic_example will be compiled
+use custom_library.all;
+
 entity combo_logic_example_tb is
 end entity;
 
 architecture tb of combo_logic_example_tb is
- 
+
     -- Signals for connecting to DUT
     signal input_x       : std_logic := '0';
     signal input_y       : std_logic := '0';
@@ -23,7 +26,7 @@ architecture tb of combo_logic_example_tb is
 
 begin 
     -- Instantiate DUT
-    uut: entity work.combo_logic_example
+    uut: entity custom_library.combo_logic_example   --instead of work , Here we have complied in the custom_library
         port map (
             input_x       => input_x,
             input_y       => input_y,
